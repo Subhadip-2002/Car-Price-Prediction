@@ -1,8 +1,0 @@
-services:
-  - type: web
-    name: car-price-app
-    env: python
-    buildCommand: |
-      pip install --upgrade pip
-      pip install -r requirements.txt
-    startCommand: gunicorn app:app
